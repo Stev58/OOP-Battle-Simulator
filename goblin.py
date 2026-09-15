@@ -7,7 +7,7 @@ class Goblin:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.attack_power = 15
+        self.attack_power = 30
 
     def attack(self):
         """Return a random amount of damage."""
