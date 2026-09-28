@@ -1,18 +1,18 @@
-import random
 from enemy import Enemy
+import random
 
-
-class Goblin(Enemy):
+cooldown = 0
+class Beefcake(Enemy):
     """A completed character class students can examine as an OOP example."""
 
     def __init__(self, name):
-        super().__init__(name,100)
-        self.attack_power = 15
+        super().__init__(name)
+        self.health = 300
+        self.attack_power = 30
 
     def attack(self):
         """Return a random amount of damage."""
         return random.randint(1, self.attack_power)
 
-    def shanked(self):
-        print("YOU HAVE BEEN STABBED BY A SPOON")
-        return super().attack()
+    def megaSlash(self):
+        return 40
